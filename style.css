@@ -170,7 +170,6 @@ img{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: aliceblue;
     padding: 10px;
   }
   
@@ -193,6 +192,7 @@ img{
   }
   .referee {
     border-radius: 10%;
+    background-color: aliceblue;
   }
 
   .referee h1 {
