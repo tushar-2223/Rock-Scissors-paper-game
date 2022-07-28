@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" oncontextmenu="return false">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- SCOREBORD  -->
+       
+        <div class="scoreboard">
+            <div class="title">
+                <h1>ROCK</h1>
+                <h1>PAPER</h1>
+                <h1>SCISSORS</h1>
+            </div>
+            <div class="score">
+                <p>SCORE</p>
+                <h1> 0 </h1>
+            </div>
+        </div>
+        <!-- HAND CIRCLE -->
+        <div class="Hand">
+            <div class="outercircle hand rock" onclick="pickUserHand('rock')">
+                <div class="innercircle">
+                    <img src="assets/rock.svg">
+                </div>
+            </div>
+            <div class="outercircle hand scissors" onclick="pickUserHand('scissors')">
+                <div class="innercircle">
+                    <img src="assets/scissors.svg" >
+                </div>
+            </div>
+            <div class="outercircle hand paper"  onclick="pickUserHand('paper')">
+                <div class="innercircle">
+                    <img src="assets/paper.svg">
+                </div>
+            </div>
+        </div>
+
+        <!-- GAME ZONE -->
+        <div class="contest">
+            <div class="user">
+                <h1 style="color: red;font-size: 20px;">YOU PICKED</h1>
+                <div class="handpickedcontainer">
+                    <div class="outercircle rock gameuserrock">
+                        <div class="innercircle">
+                            <img id="userChoiceimage" src="assets/rock.svg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="referee">
+                <div class="decision">
+                    <h1 style="color: blue;"> YOU WIN! </h1>
+                </div>
+                <div class="newGame" onclick="restartGame()" style="background-color: rgb(0, 38, 255);color: white;">PLAY AGAIN</div>
+            </div>
+            <div class="computer">
+                <h1 style="color: red;font-size: 20px;">COMPUTER PICKED</h1>
+                <div class="handpickedcontainer">
+                    <div class="outercircle rock gamecomprock">
+                        <div class="innercircle">
+                            <img id="computerPickImage" src="assets/rock.svg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
